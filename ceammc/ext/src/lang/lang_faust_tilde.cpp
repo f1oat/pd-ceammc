@@ -283,11 +283,13 @@ void LangFaustTilde::onRestore(const AtomListView& lv)
     if (lv.empty()) {
         compile();
     } else {
-        src_.push_back({});
-        auto& back = src_.back();
+        if (src_.empty()) {
+            src_.push_back({});
+            auto& back = src_.back();
 
-        for (auto& a : lv)
-            back.push_back(a);
+            for (auto& a : lv)
+                back.push_back(a);
+        }
     }
 }
 
