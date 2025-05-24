@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <sys/mman.h>
 
 #ifdef PD_EVENTLOOP
 #include <pthread.h>
@@ -451,6 +452,9 @@ int sys_main(int argc, const char **argv)
 
 static int sys_run(void)
 {
+    // Force mlockall // F1OAT
+    mlockall(MCL_CURRENT | MCL_FUTURE);
+
     if (sys_hipriority)
         sys_setrealtime(sys_libdir->s_name); /* set desired process priority */
     if (sys_externalschedlib)
