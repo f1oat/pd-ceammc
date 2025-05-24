@@ -23,6 +23,8 @@
 #include <algorithm>
 #include <array>
 #include <string>
+#include <fstream>
+#include <sstream>
 
 constexpr size_t TUNE_MAX_BANK = 128;
 constexpr size_t TUNE_MAX_PRESET = 128;
@@ -98,6 +100,17 @@ uint16_t pan_to_sfizz(t_float v)
         : convert::lin2lin<t_float, IN_CENTER, IN_RIGHT>(v, OUT_CENTER, OUT_RIGHT);
 }
 
+std::string readFileToString(const std::string& filePath) {
+    std::ifstream file(filePath);  // Open the file
+    if (!file) {
+        throw std::runtime_error("Could not open file: " + filePath);
+    }
+
+    std::ostringstream ss;
+    ss << file.rdbuf();  // Read the entire file into a stringstream
+    return ss.str();     // Return the string
+}
+
 // static member init
 SfizzTilde::TuningBank SfizzTilde::tuning_bank_;
 
@@ -121,7 +134,33 @@ SfizzTilde::SfizzTilde(const PdArgs& args)
             }
         } else {
             auto path = findInStdPaths(sym_path);
-            if (!sfz_.loadSfzFile(path)) {
+            std::string globalDefs;
+            
+            // Derive the directory from `path` using string manipulation
+            std::string::size_type slashPos = path.find_last_of("/\\");
+            std::string directory = (slashPos != std::string::npos) ? path.substr(0, slashPos) : ".";
+            
+            // Compose the full path to _globaldefs.txt
+            std::string defsPath = directory + "/_globaldefs.txt";
+            
+            // Attempt to open the file directly to check existence and read content
+            std::ifstream defsFile(defsPath.c_str());
+            if (defsFile) {
+                std::ostringstream ss;
+                ss << defsFile.rdbuf();
+                globalDefs = ss.str();
+            } else {
+                globalDefs = ""; // or your default: "<control>\nhint_ram_based=1\n"
+            }
+
+            // Extract filename from path for logging
+            std::string::size_type fileNamePos = path.find_last_of("/\\");
+            std::string fileName = (fileNamePos != std::string::npos) ? path.substr(fileNamePos + 1) : path;
+
+            LIB_DBG << "Loading " << fileName << (!globalDefs.empty() ? " with _globaldefs.txt" : "");
+
+            std::string fileContent = readFileToString(path);            
+            if (!sfz_.loadSfzString(path, globalDefs + fileContent)) {
                 OBJ_ERR << "can't load soundfont: " << sf_path_->value();
                 return;
             }
@@ -183,7 +222,8 @@ void SfizzTilde::setupDSP(t_signal** sig)
 {
     SoundExternal::setupDSP(sig);
     sfz_.setSampleRate(samplerate());
-    sfz_.setSamplesPerBlock(blockSize());
+    sfz_.setSamplesPerBlock(blockSize()); 
+    sfz_.setPreloadSize(8*8192);    // F1OAT
 }
 
 void SfizzTilde::processBlock(const t_sample** in, t_sample** out)
@@ -715,6 +755,6 @@ void setup_misc_sfizz_tilde()
     obj.addMethod("legato", &SfizzTilde::m_legato_pedal);
 
 #ifdef SFIZZ_VERSION
-    LIB_DBG << "Sfizz version: " << SFIZZ_VERSION;
+    LIB_DBG << "Sfizz version: " << SFIZZ_VERSION << " PATCH F1OAT";
 #endif
 }
