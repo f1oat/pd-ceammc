@@ -132,7 +132,7 @@ namespace ceammc {
 namespace parser {
 
 
-#line 136 "lex/parser_music.cpp"
+#line 133 "lex/parser_music.cpp"
 static const int bpm_start = 1;
 static const int bpm_first_final = 7;
 static const int bpm_error = 0;
@@ -158,14 +158,14 @@ bool parse_tempo(const char* str, music::Tempo& t)
     RagelTempo bpm;
 
     
-#line 162 "lex/parser_music.cpp"
+#line 155 "lex/parser_music.cpp"
 	{
 	cs = bpm_start;
 	}
 
 #line 155 "lex/parser_music.rl"
     
-#line 169 "lex/parser_music.cpp"
+#line 158 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -190,7 +190,7 @@ st7:
 	if ( ++p == pe )
 		goto _test_eof7;
 case 7:
-#line 194 "lex/parser_music.cpp"
+#line 180 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto st2;
 		case 95: goto st9;
@@ -213,7 +213,7 @@ st8:
 	if ( ++p == pe )
 		goto _test_eof8;
 case 8:
-#line 217 "lex/parser_music.cpp"
+#line 201 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 95: goto st9;
 		case 98: goto st3;
@@ -230,7 +230,7 @@ st9:
 	if ( ++p == pe )
 		goto _test_eof9;
 case 9:
-#line 234 "lex/parser_music.cpp"
+#line 216 "lex/parser_music.cpp"
 	if ( (*p) == 98 )
 		goto st3;
 	goto st0;
@@ -242,7 +242,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 246 "lex/parser_music.cpp"
+#line 226 "lex/parser_music.cpp"
 	if ( (*p) == 112 )
 		goto st4;
 	goto st0;
@@ -285,7 +285,7 @@ st11:
 	if ( ++p == pe )
 		goto _test_eof11;
 case 11:
-#line 289 "lex/parser_music.cpp"
+#line 262 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto tr12;
 		case 47: goto st6;
@@ -309,7 +309,7 @@ st12:
 	if ( ++p == pe )
 		goto _test_eof12;
 case 12:
-#line 313 "lex/parser_music.cpp"
+#line 282 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 95: goto st9;
 		case 98: goto st3;
@@ -336,7 +336,7 @@ st13:
 	if ( ++p == pe )
 		goto _test_eof13;
 case 13:
-#line 340 "lex/parser_music.cpp"
+#line 305 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto tr17;
 		case 95: goto st9;
@@ -359,7 +359,7 @@ st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 363 "lex/parser_music.cpp"
+#line 324 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto st2;
 		case 95: goto st9;
@@ -404,7 +404,7 @@ case 14:
 #line 10 "lex/ragel_music.rl"
 	{ ragel_cat = CAT_UNIT; ragel_type = TYPE_BPM; }
 	break;
-#line 408 "lex/parser_music.cpp"
+#line 365 "lex/parser_music.cpp"
 	}
 	}
 
@@ -437,7 +437,7 @@ bool parse_tempo(const Atom& a, music::Tempo& t)
 }
 
 
-#line 441 "lex/parser_music.cpp"
+#line 394 "lex/parser_music.cpp"
 static const int spn_start = 1;
 static const int spn_first_final = 8;
 static const int spn_error = 0;
@@ -463,14 +463,14 @@ bool parse_spn(const char* str, music::Spn& res)
     RagelSpn spn;
 
     
-#line 467 "lex/parser_music.cpp"
+#line 416 "lex/parser_music.cpp"
 	{
 	cs = spn_start;
 	}
 
 #line 203 "lex/parser_music.rl"
     
-#line 474 "lex/parser_music.cpp"
+#line 419 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -537,7 +537,7 @@ st8:
 	if ( ++p == pe )
 		goto _test_eof8;
 case 8:
-#line 541 "lex/parser_music.cpp"
+#line 471 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr14;
 		case 40: goto tr15;
@@ -557,7 +557,7 @@ st9:
 	if ( ++p == pe )
 		goto _test_eof9;
 case 9:
-#line 561 "lex/parser_music.cpp"
+#line 489 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr21;
 		case 40: goto tr15;
@@ -580,7 +580,7 @@ st10:
 	if ( ++p == pe )
 		goto _test_eof10;
 case 10:
-#line 584 "lex/parser_music.cpp"
+#line 509 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto tr15;
 		case 45: goto tr16;
@@ -602,7 +602,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 606 "lex/parser_music.cpp"
+#line 528 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr8;
 		case 45: goto tr8;
@@ -616,7 +616,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 620 "lex/parser_music.cpp"
+#line 540 "lex/parser_music.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr9;
 	goto st0;
@@ -628,7 +628,7 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 632 "lex/parser_music.cpp"
+#line 550 "lex/parser_music.cpp"
 	if ( (*p) == 99 )
 		goto st6;
 	if ( 48 <= (*p) && (*p) <= 57 )
@@ -642,7 +642,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 646 "lex/parser_music.cpp"
+#line 562 "lex/parser_music.cpp"
 	if ( (*p) == 99 )
 		goto st6;
 	goto st0;
@@ -661,7 +661,7 @@ st11:
 	if ( ++p == pe )
 		goto _test_eof11;
 case 11:
-#line 665 "lex/parser_music.cpp"
+#line 579 "lex/parser_music.cpp"
 	goto st0;
 tr16:
 #line 64 "lex/ragel_music.rl"
@@ -671,7 +671,7 @@ st7:
 	if ( ++p == pe )
 		goto _test_eof7;
 case 7:
-#line 675 "lex/parser_music.cpp"
+#line 587 "lex/parser_music.cpp"
 	if ( (*p) == 49 )
 		goto tr13;
 	goto st0;
@@ -689,7 +689,7 @@ st12:
 	if ( ++p == pe )
 		goto _test_eof12;
 case 12:
-#line 693 "lex/parser_music.cpp"
+#line 601 "lex/parser_music.cpp"
 	if ( (*p) == 40 )
 		goto tr22;
 	goto st0;
@@ -705,7 +705,7 @@ st13:
 	if ( ++p == pe )
 		goto _test_eof13;
 case 13:
-#line 709 "lex/parser_music.cpp"
+#line 613 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 94: goto tr24;
@@ -721,7 +721,7 @@ st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 725 "lex/parser_music.cpp"
+#line 626 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 94: goto tr25;
@@ -737,7 +737,7 @@ st15:
 	if ( ++p == pe )
 		goto _test_eof15;
 case 15:
-#line 741 "lex/parser_music.cpp"
+#line 639 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 94: goto tr26;
@@ -753,7 +753,7 @@ st16:
 	if ( ++p == pe )
 		goto _test_eof16;
 case 16:
-#line 757 "lex/parser_music.cpp"
+#line 652 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 94: goto tr27;
@@ -775,7 +775,7 @@ st17:
 	if ( ++p == pe )
 		goto _test_eof17;
 case 17:
-#line 779 "lex/parser_music.cpp"
+#line 669 "lex/parser_music.cpp"
 	if ( (*p) == 40 )
 		goto st2;
 	goto st0;
@@ -791,7 +791,7 @@ st18:
 	if ( ++p == pe )
 		goto _test_eof18;
 case 18:
-#line 795 "lex/parser_music.cpp"
+#line 681 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 95: goto tr28;
@@ -807,7 +807,7 @@ st19:
 	if ( ++p == pe )
 		goto _test_eof19;
 case 19:
-#line 811 "lex/parser_music.cpp"
+#line 694 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 95: goto tr29;
@@ -823,7 +823,7 @@ st20:
 	if ( ++p == pe )
 		goto _test_eof20;
 case 20:
-#line 827 "lex/parser_music.cpp"
+#line 707 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 95: goto tr30;
@@ -839,7 +839,7 @@ st21:
 	if ( ++p == pe )
 		goto _test_eof21;
 case 21:
-#line 843 "lex/parser_music.cpp"
+#line 720 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st2;
 		case 95: goto tr31;
@@ -853,7 +853,7 @@ st22:
 	if ( ++p == pe )
 		goto _test_eof22;
 case 22:
-#line 857 "lex/parser_music.cpp"
+#line 732 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto tr15;
 		case 45: goto tr16;
@@ -919,7 +919,7 @@ case 22:
 #line 82 "lex/ragel_music.rl"
 	{ragel_cat = CAT_UNIT; ragel_type = TYPE_SPN;}
 	break;
-#line 923 "lex/parser_music.cpp"
+#line 792 "lex/parser_music.cpp"
 	}
 	}
 
@@ -945,7 +945,7 @@ bool parse_spn(const Atom& a, music::Spn& spn)
 }
 
 
-#line 949 "lex/parser_music.cpp"
+#line 814 "lex/parser_music.cpp"
 static const int pitch_start = 1;
 static const int pitch_first_final = 2;
 static const int pitch_error = 0;
@@ -972,14 +972,14 @@ bool parse_pitch_class(const char* str, music::PitchClass& res)
     RagelSpn spn;
 
     
-#line 976 "lex/parser_music.cpp"
+#line 837 "lex/parser_music.cpp"
 	{
 	cs = pitch_start;
 	}
 
 #line 245 "lex/parser_music.rl"
     
-#line 983 "lex/parser_music.cpp"
+#line 840 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -1046,7 +1046,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 1050 "lex/parser_music.cpp"
+#line 892 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr8;
 		case 98: goto tr9;
@@ -1060,7 +1060,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 1064 "lex/parser_music.cpp"
+#line 904 "lex/parser_music.cpp"
 	if ( (*p) == 35 )
 		goto tr10;
 	goto st0;
@@ -1076,7 +1076,7 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 1080 "lex/parser_music.cpp"
+#line 917 "lex/parser_music.cpp"
 	goto st0;
 tr9:
 #line 39 "lex/ragel_music.rl"
@@ -1086,7 +1086,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 1090 "lex/parser_music.cpp"
+#line 925 "lex/parser_music.cpp"
 	if ( (*p) == 98 )
 		goto tr11;
 	goto st0;
@@ -1107,7 +1107,7 @@ case 5:
 #line 86 "lex/ragel_music.rl"
 	{ragel_cat = CAT_UNIT; ragel_type = TYPE_SPN;}
 	break;
-#line 1111 "lex/parser_music.cpp"
+#line 944 "lex/parser_music.cpp"
 	}
 	}
 
@@ -1136,7 +1136,7 @@ bool parse_pitch_class(const Atom& a, music::PitchClass& res)
 }
 
 
-#line 1140 "lex/parser_music.cpp"
+#line 969 "lex/parser_music.cpp"
 static const int notation_start = 1;
 static const int notation_first_final = 15;
 static const int notation_error = 0;
@@ -1163,14 +1163,14 @@ bool parse_notation(const char* str, Notation& n)
     RagelSpn spn;
 
     
-#line 1167 "lex/parser_music.cpp"
+#line 992 "lex/parser_music.cpp"
 	{
 	cs = notation_start;
 	}
 
 #line 290 "lex/parser_music.rl"
     
-#line 1174 "lex/parser_music.cpp"
+#line 995 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -1209,7 +1209,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 1213 "lex/parser_music.cpp"
+#line 1030 "lex/parser_music.cpp"
 	if ( (*p) == 42 )
 		goto st3;
 	if ( 48 <= (*p) && (*p) <= 57 )
@@ -1277,7 +1277,7 @@ st15:
 	if ( ++p == pe )
 		goto _test_eof15;
 case 15:
-#line 1281 "lex/parser_music.cpp"
+#line 1083 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr25;
 		case 40: goto tr26;
@@ -1298,7 +1298,7 @@ st16:
 	if ( ++p == pe )
 		goto _test_eof16;
 case 16:
-#line 1302 "lex/parser_music.cpp"
+#line 1102 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr33;
 		case 40: goto tr26;
@@ -1322,7 +1322,7 @@ st17:
 	if ( ++p == pe )
 		goto _test_eof17;
 case 17:
-#line 1326 "lex/parser_music.cpp"
+#line 1123 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto tr26;
 		case 45: goto tr27;
@@ -1345,7 +1345,7 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 1349 "lex/parser_music.cpp"
+#line 1143 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr12;
 		case 45: goto tr12;
@@ -1359,7 +1359,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 1363 "lex/parser_music.cpp"
+#line 1155 "lex/parser_music.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr13;
 	goto st0;
@@ -1371,7 +1371,7 @@ st6:
 	if ( ++p == pe )
 		goto _test_eof6;
 case 6:
-#line 1375 "lex/parser_music.cpp"
+#line 1165 "lex/parser_music.cpp"
 	if ( (*p) == 99 )
 		goto st8;
 	if ( 48 <= (*p) && (*p) <= 57 )
@@ -1385,7 +1385,7 @@ st7:
 	if ( ++p == pe )
 		goto _test_eof7;
 case 7:
-#line 1389 "lex/parser_music.cpp"
+#line 1177 "lex/parser_music.cpp"
 	if ( (*p) == 99 )
 		goto st8;
 	goto st0;
@@ -1404,7 +1404,7 @@ st18:
 	if ( ++p == pe )
 		goto _test_eof18;
 case 18:
-#line 1408 "lex/parser_music.cpp"
+#line 1194 "lex/parser_music.cpp"
 	if ( (*p) == 124 )
 		goto tr34;
 	goto st0;
@@ -1438,7 +1438,7 @@ st9:
 	if ( ++p == pe )
 		goto _test_eof9;
 case 9:
-#line 1442 "lex/parser_music.cpp"
+#line 1218 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 42: goto st10;
 		case 47: goto st12;
@@ -1467,7 +1467,7 @@ st19:
 	if ( ++p == pe )
 		goto _test_eof19;
 case 19:
-#line 1471 "lex/parser_music.cpp"
+#line 1243 "lex/parser_music.cpp"
 	if ( (*p) == 47 )
 		goto st11;
 	if ( 48 <= (*p) && (*p) <= 57 )
@@ -1494,7 +1494,7 @@ st20:
 	if ( ++p == pe )
 		goto _test_eof20;
 case 20:
-#line 1498 "lex/parser_music.cpp"
+#line 1266 "lex/parser_music.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr37;
 	goto st0;
@@ -1519,7 +1519,7 @@ st21:
 	if ( ++p == pe )
 		goto _test_eof21;
 case 21:
-#line 1523 "lex/parser_music.cpp"
+#line 1287 "lex/parser_music.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr38;
 	goto st0;
@@ -1543,7 +1543,7 @@ st22:
 	if ( ++p == pe )
 		goto _test_eof22;
 case 22:
-#line 1547 "lex/parser_music.cpp"
+#line 1304 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto tr39;
 		case 47: goto st13;
@@ -1566,7 +1566,7 @@ st23:
 	if ( ++p == pe )
 		goto _test_eof23;
 case 23:
-#line 1570 "lex/parser_music.cpp"
+#line 1323 "lex/parser_music.cpp"
 	if ( (*p) == 46 )
 		goto tr43;
 	goto st0;
@@ -1578,7 +1578,7 @@ st24:
 	if ( ++p == pe )
 		goto _test_eof24;
 case 24:
-#line 1582 "lex/parser_music.cpp"
+#line 1333 "lex/parser_music.cpp"
 	if ( (*p) == 46 )
 		goto tr44;
 	goto st0;
@@ -1590,7 +1590,7 @@ st25:
 	if ( ++p == pe )
 		goto _test_eof25;
 case 25:
-#line 1594 "lex/parser_music.cpp"
+#line 1343 "lex/parser_music.cpp"
 	goto st0;
 st13:
 	if ( ++p == pe )
@@ -1613,7 +1613,7 @@ st26:
 	if ( ++p == pe )
 		goto _test_eof26;
 case 26:
-#line 1617 "lex/parser_music.cpp"
+#line 1362 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto tr45;
 		case 95: goto st27;
@@ -1629,7 +1629,7 @@ st27:
 	if ( ++p == pe )
 		goto _test_eof27;
 case 27:
-#line 1633 "lex/parser_music.cpp"
+#line 1376 "lex/parser_music.cpp"
 	if ( (*p) == 46 )
 		goto tr45;
 	goto st0;
@@ -1641,7 +1641,7 @@ st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 1645 "lex/parser_music.cpp"
+#line 1386 "lex/parser_music.cpp"
 	if ( (*p) == 49 )
 		goto tr24;
 	goto st0;
@@ -1659,7 +1659,7 @@ st28:
 	if ( ++p == pe )
 		goto _test_eof28;
 case 28:
-#line 1663 "lex/parser_music.cpp"
+#line 1400 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto tr48;
 		case 124: goto tr49;
@@ -1677,7 +1677,7 @@ st29:
 	if ( ++p == pe )
 		goto _test_eof29;
 case 29:
-#line 1681 "lex/parser_music.cpp"
+#line 1414 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 94: goto tr51;
@@ -1694,7 +1694,7 @@ st30:
 	if ( ++p == pe )
 		goto _test_eof30;
 case 30:
-#line 1698 "lex/parser_music.cpp"
+#line 1428 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 94: goto tr52;
@@ -1711,7 +1711,7 @@ st31:
 	if ( ++p == pe )
 		goto _test_eof31;
 case 31:
-#line 1715 "lex/parser_music.cpp"
+#line 1442 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 94: goto tr53;
@@ -1728,7 +1728,7 @@ st32:
 	if ( ++p == pe )
 		goto _test_eof32;
 case 32:
-#line 1732 "lex/parser_music.cpp"
+#line 1456 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 94: goto tr54;
@@ -1751,7 +1751,7 @@ st33:
 	if ( ++p == pe )
 		goto _test_eof33;
 case 33:
-#line 1755 "lex/parser_music.cpp"
+#line 1474 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 124: goto tr34;
@@ -1769,7 +1769,7 @@ st34:
 	if ( ++p == pe )
 		goto _test_eof34;
 case 34:
-#line 1773 "lex/parser_music.cpp"
+#line 1488 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 95: goto tr55;
@@ -1786,7 +1786,7 @@ st35:
 	if ( ++p == pe )
 		goto _test_eof35;
 case 35:
-#line 1790 "lex/parser_music.cpp"
+#line 1502 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 95: goto tr56;
@@ -1803,7 +1803,7 @@ st36:
 	if ( ++p == pe )
 		goto _test_eof36;
 case 36:
-#line 1807 "lex/parser_music.cpp"
+#line 1516 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 95: goto tr57;
@@ -1820,7 +1820,7 @@ st37:
 	if ( ++p == pe )
 		goto _test_eof37;
 case 37:
-#line 1824 "lex/parser_music.cpp"
+#line 1530 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto st4;
 		case 95: goto tr58;
@@ -1835,7 +1835,7 @@ st38:
 	if ( ++p == pe )
 		goto _test_eof38;
 case 38:
-#line 1839 "lex/parser_music.cpp"
+#line 1543 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 40: goto tr26;
 		case 45: goto tr27;
@@ -1855,7 +1855,7 @@ st39:
 	if ( ++p == pe )
 		goto _test_eof39;
 case 39:
-#line 1859 "lex/parser_music.cpp"
+#line 1561 "lex/parser_music.cpp"
 	if ( (*p) == 124 )
 		goto tr60;
 	goto st0;
@@ -1989,7 +1989,7 @@ case 39:
 #line 127 "lex/ragel_music.rl"
 	{ragel_cat = CAT_UNIT; ragel_type = TYPE_SPN;}
 	break;
-#line 1993 "lex/parser_music.cpp"
+#line 1668 "lex/parser_music.cpp"
 	}
 	}
 
@@ -2015,7 +2015,7 @@ bool parse_notation(const Atom& a, Notation& n)
 }
 
 
-#line 2019 "lex/parser_music.cpp"
+#line 1690 "lex/parser_music.cpp"
 static const int duration_start = 1;
 static const int duration_first_final = 4;
 static const int duration_error = 0;
@@ -2041,14 +2041,14 @@ bool parse_duration(const char* str, Duration& dur)
     RagelDuration note;
 
     
-#line 2045 "lex/parser_music.cpp"
+#line 1712 "lex/parser_music.cpp"
 	{
 	cs = duration_start;
 	}
 
 #line 331 "lex/parser_music.rl"
     
-#line 2052 "lex/parser_music.cpp"
+#line 1715 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -2081,7 +2081,7 @@ st4:
 	if ( ++p == pe )
 		goto _test_eof4;
 case 4:
-#line 2085 "lex/parser_music.cpp"
+#line 1741 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 42: goto st2;
 		case 46: goto tr5;
@@ -2097,7 +2097,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 2101 "lex/parser_music.cpp"
+#line 1755 "lex/parser_music.cpp"
 	if ( 49 <= (*p) && (*p) <= 57 )
 		goto tr2;
 	goto st0;
@@ -2121,7 +2121,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 2125 "lex/parser_music.cpp"
+#line 1772 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto tr5;
 		case 47: goto st3;
@@ -2144,7 +2144,7 @@ st6:
 	if ( ++p == pe )
 		goto _test_eof6;
 case 6:
-#line 2148 "lex/parser_music.cpp"
+#line 1791 "lex/parser_music.cpp"
 	if ( (*p) == 46 )
 		goto tr10;
 	goto st0;
@@ -2156,7 +2156,7 @@ st7:
 	if ( ++p == pe )
 		goto _test_eof7;
 case 7:
-#line 2160 "lex/parser_music.cpp"
+#line 1801 "lex/parser_music.cpp"
 	if ( (*p) == 46 )
 		goto tr11;
 	goto st0;
@@ -2168,7 +2168,7 @@ st8:
 	if ( ++p == pe )
 		goto _test_eof8;
 case 8:
-#line 2172 "lex/parser_music.cpp"
+#line 1811 "lex/parser_music.cpp"
 	goto st0;
 st3:
 	if ( ++p == pe )
@@ -2191,7 +2191,7 @@ st9:
 	if ( ++p == pe )
 		goto _test_eof9;
 case 9:
-#line 2195 "lex/parser_music.cpp"
+#line 1830 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 46: goto tr12;
 		case 95: goto st10;
@@ -2207,7 +2207,7 @@ st10:
 	if ( ++p == pe )
 		goto _test_eof10;
 case 10:
-#line 2211 "lex/parser_music.cpp"
+#line 1844 "lex/parser_music.cpp"
 	if ( (*p) == 46 )
 		goto tr12;
 	goto st0;
@@ -2241,7 +2241,7 @@ case 10:
 #line 92 "lex/ragel_music.rl"
 	{ note.durtype = DURATION_ABS; }
 	break;
-#line 2245 "lex/parser_music.cpp"
+#line 1874 "lex/parser_music.cpp"
 	}
 	}
 
@@ -2274,7 +2274,7 @@ bool parse_duration(const Atom& a, Duration& dur)
 }
 
 
-#line 2278 "lex/parser_music.cpp"
+#line 1903 "lex/parser_music.cpp"
 static const int time_signature_start = 1;
 static const int time_signature_first_final = 6;
 static const int time_signature_error = 0;
@@ -2299,14 +2299,14 @@ bool parse_time_signature(const char* str, music::TimeSignature& ts)
     RagelTimeSig ragel_ts;
 
     
-#line 2303 "lex/parser_music.cpp"
+#line 1924 "lex/parser_music.cpp"
 	{
 	cs = time_signature_start;
 	}
 
 #line 378 "lex/parser_music.rl"
     
-#line 2310 "lex/parser_music.cpp"
+#line 1927 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -2327,7 +2327,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 2331 "lex/parser_music.cpp"
+#line 1946 "lex/parser_music.cpp"
 	if ( 49 <= (*p) && (*p) <= 57 )
 		goto tr2;
 	goto st0;
@@ -2345,7 +2345,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 2349 "lex/parser_music.cpp"
+#line 1960 "lex/parser_music.cpp"
 	if ( (*p) == 47 )
 		goto st4;
 	if ( 48 <= (*p) && (*p) <= 57 )
@@ -2372,7 +2372,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 2376 "lex/parser_music.cpp"
+#line 1983 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr6;
 		case 124: goto tr8;
@@ -2388,7 +2388,7 @@ st6:
 	if ( ++p == pe )
 		goto _test_eof6;
 case 6:
-#line 2392 "lex/parser_music.cpp"
+#line 1997 "lex/parser_music.cpp"
 	goto st0;
 	}
 	_test_eof2: cs = 2; goto _test_eof; 
@@ -2421,7 +2421,7 @@ case 6:
 }
 
 
-#line 2425 "lex/parser_music.cpp"
+#line 2026 "lex/parser_music.cpp"
 static const int chord_names_start = 1;
 static const int chord_names_first_final = 42;
 static const int chord_names_error = 0;
@@ -2449,14 +2449,14 @@ bool parse_chord_class(const char* str, ChordClass& res)
     const char* name = "";
 
     
-#line 2453 "lex/parser_music.cpp"
+#line 2050 "lex/parser_music.cpp"
 	{
 	cs = chord_names_start;
 	}
 
 #line 422 "lex/parser_music.rl"
     
-#line 2460 "lex/parser_music.cpp"
+#line 2053 "lex/parser_music.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -2523,7 +2523,7 @@ st42:
 	if ( ++p == pe )
 		goto _test_eof42;
 case 42:
-#line 2527 "lex/parser_music.cpp"
+#line 2105 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr65;
 		case 43: goto tr66;
@@ -2546,7 +2546,7 @@ st43:
 	if ( ++p == pe )
 		goto _test_eof43;
 case 43:
-#line 2550 "lex/parser_music.cpp"
+#line 2126 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 35: goto tr76;
 		case 43: goto tr66;
@@ -2572,7 +2572,7 @@ st44:
 	if ( ++p == pe )
 		goto _test_eof44;
 case 44:
-#line 2576 "lex/parser_music.cpp"
+#line 2149 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr66;
 		case 49: goto tr67;
@@ -2773,7 +2773,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 2777 "lex/parser_music.cpp"
+#line 2303 "lex/parser_music.cpp"
 	if ( (*p) == 54 )
 		goto st45;
 	goto st0;
@@ -2965,7 +2965,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 2969 "lex/parser_music.cpp"
+#line 2452 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 49: goto st46;
 		case 51: goto st90;
@@ -3159,7 +3159,7 @@ st47:
 	if ( ++p == pe )
 		goto _test_eof47;
 case 47:
-#line 3163 "lex/parser_music.cpp"
+#line 2603 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr95;
 		case 45: goto st4;
@@ -3370,7 +3370,7 @@ st49:
 	if ( ++p == pe )
 		goto _test_eof49;
 case 49:
-#line 3374 "lex/parser_music.cpp"
+#line 2771 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr114;
 		case 49: goto tr115;
@@ -3571,7 +3571,7 @@ st5:
 	if ( ++p == pe )
 		goto _test_eof5;
 case 5:
-#line 3575 "lex/parser_music.cpp"
+#line 2925 "lex/parser_music.cpp"
 	if ( (*p) == 117 )
 		goto st6;
 	goto st0;
@@ -3811,7 +3811,7 @@ st8:
 	if ( ++p == pe )
 		goto _test_eof8;
 case 8:
-#line 3815 "lex/parser_music.cpp"
+#line 3118 "lex/parser_music.cpp"
 	if ( (*p) == 105 )
 		goto st9;
 	goto st0;
@@ -4050,7 +4050,7 @@ st11:
 	if ( ++p == pe )
 		goto _test_eof11;
 case 11:
-#line 4054 "lex/parser_music.cpp"
+#line 3310 "lex/parser_music.cpp"
 	if ( (*p) == 97 )
 		goto st12;
 	goto st0;
@@ -4303,7 +4303,7 @@ st19:
 	if ( ++p == pe )
 		goto _test_eof19;
 case 19:
-#line 4307 "lex/parser_music.cpp"
+#line 3518 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 97: goto st20;
 		case 105: goto st24;
@@ -4537,7 +4537,7 @@ st22:
 	if ( ++p == pe )
 		goto _test_eof22;
 case 22:
-#line 4541 "lex/parser_music.cpp"
+#line 3707 "lex/parser_music.cpp"
 	if ( (*p) == 117 )
 		goto st23;
 	goto st0;
@@ -5244,7 +5244,7 @@ st91:
 	if ( ++p == pe )
 		goto _test_eof91;
 case 91:
-#line 5248 "lex/parser_music.cpp"
+#line 4412 "lex/parser_music.cpp"
 	switch( (*p) ) {
 		case 43: goto tr66;
 		case 49: goto tr67;
@@ -5542,7 +5542,7 @@ case 91:
 #line 207 "lex/ragel_music.rl"
 	{ rg_chord_type.assign({0, 3, 6, 10, 14, 17, 21}); }
 	break;
-#line 5546 "lex/parser_music.cpp"
+#line 4663 "lex/parser_music.cpp"
 	}
 	}
 

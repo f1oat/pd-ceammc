@@ -66,7 +66,7 @@ inline size_t getArrayPos(ArraySaverParams& params, fsm::NumericData& num, AtomT
 }
 
 
-#line 70 "lex/parser_array_saver.cpp"
+#line 67 "lex/parser_array_saver.cpp"
 static const int array_saver_start = 1;
 static const int array_saver_first_final = 109;
 static const int array_saver_error = 0;
@@ -100,12 +100,12 @@ bool parse_array_saver_params(const char* str, size_t arraySize, ArraySaverParam
     DECLARE_RAGEL_NUMERIC_VARS;
 
 
-#line 104 "lex/parser_array_saver.cpp"
+#line 97 "lex/parser_array_saver.cpp"
 	{
 	cs = array_saver_start;
 	}
 
-#line 109 "lex/parser_array_saver.cpp"
+#line 100 "lex/parser_array_saver.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -133,7 +133,7 @@ st109:
 	if ( ++p == pe )
 		goto _test_eof109;
 case 109:
-#line 137 "lex/parser_array_saver.cpp"
+#line 124 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr138;
 	if ( 9 <= (*p) && (*p) <= 13 )
@@ -394,7 +394,7 @@ st2:
 	if ( ++p == pe )
 		goto _test_eof2;
 case 2:
-#line 398 "lex/parser_array_saver.cpp"
+#line 321 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto st2;
 		case 64: goto tr3;
@@ -415,7 +415,7 @@ st3:
 	if ( ++p == pe )
 		goto _test_eof3;
 case 3:
-#line 419 "lex/parser_array_saver.cpp"
+#line 339 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 97: goto st4;
 		case 98: goto st7;
@@ -524,7 +524,7 @@ st13:
 	if ( ++p == pe )
 		goto _test_eof13;
 case 13:
-#line 528 "lex/parser_array_saver.cpp"
+#line 446 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 43: goto tr26;
 		case 45: goto tr26;
@@ -541,7 +541,7 @@ st14:
 	if ( ++p == pe )
 		goto _test_eof14;
 case 14:
-#line 545 "lex/parser_array_saver.cpp"
+#line 461 "lex/parser_array_saver.cpp"
 	if ( (*p) == 48 )
 		goto tr27;
 	if ( 49 <= (*p) && (*p) <= 57 )
@@ -555,7 +555,7 @@ st111:
 	if ( ++p == pe )
 		goto _test_eof111;
 case 111:
-#line 559 "lex/parser_array_saver.cpp"
+#line 473 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr140;
 		case 37: goto tr141;
@@ -592,7 +592,7 @@ st112:
 	if ( ++p == pe )
 		goto _test_eof112;
 case 112:
-#line 596 "lex/parser_array_saver.cpp"
+#line 506 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr148;
 	if ( 9 <= (*p) && (*p) <= 13 )
@@ -621,7 +621,7 @@ st113:
 	if ( ++p == pe )
 		goto _test_eof113;
 case 113:
-#line 625 "lex/parser_array_saver.cpp"
+#line 531 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr149;
 	if ( 9 <= (*p) && (*p) <= 13 )
@@ -644,7 +644,7 @@ st15:
 	if ( ++p == pe )
 		goto _test_eof15;
 case 15:
-#line 648 "lex/parser_array_saver.cpp"
+#line 551 "lex/parser_array_saver.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr29;
 	goto st0;
@@ -659,7 +659,7 @@ st114:
 	if ( ++p == pe )
 		goto _test_eof114;
 case 114:
-#line 663 "lex/parser_array_saver.cpp"
+#line 564 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr150;
 		case 37: goto tr151;
@@ -698,7 +698,7 @@ st115:
 	if ( ++p == pe )
 		goto _test_eof115;
 case 115:
-#line 702 "lex/parser_array_saver.cpp"
+#line 599 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr157;
 		case 37: goto st112;
@@ -733,7 +733,7 @@ st16:
 	if ( ++p == pe )
 		goto _test_eof16;
 case 16:
-#line 737 "lex/parser_array_saver.cpp"
+#line 630 "lex/parser_array_saver.cpp"
 	if ( (*p) == 115 )
 		goto st116;
 	goto st0;
@@ -787,7 +787,7 @@ st18:
 	if ( ++p == pe )
 		goto _test_eof18;
 case 18:
-#line 791 "lex/parser_array_saver.cpp"
+#line 680 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 101: goto st19;
 		case 104: goto st23;
@@ -876,7 +876,7 @@ st119:
 	if ( ++p == pe )
 		goto _test_eof119;
 case 119:
-#line 880 "lex/parser_array_saver.cpp"
+#line 765 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr164;
 		case 97: goto st120;
@@ -936,7 +936,7 @@ st123:
 	if ( ++p == pe )
 		goto _test_eof123;
 case 123:
-#line 940 "lex/parser_array_saver.cpp"
+#line 823 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr140;
 		case 37: goto tr141;
@@ -1001,7 +1001,7 @@ st32:
 	if ( ++p == pe )
 		goto _test_eof32;
 case 32:
-#line 1005 "lex/parser_array_saver.cpp"
+#line 886 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 43: goto tr47;
 		case 45: goto tr47;
@@ -1018,7 +1018,7 @@ st33:
 	if ( ++p == pe )
 		goto _test_eof33;
 case 33:
-#line 1022 "lex/parser_array_saver.cpp"
+#line 901 "lex/parser_array_saver.cpp"
 	if ( (*p) == 48 )
 		goto tr48;
 	if ( 49 <= (*p) && (*p) <= 57 )
@@ -1032,7 +1032,7 @@ st124:
 	if ( ++p == pe )
 		goto _test_eof124;
 case 124:
-#line 1036 "lex/parser_array_saver.cpp"
+#line 913 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr169;
 		case 37: goto tr170;
@@ -1069,7 +1069,7 @@ st125:
 	if ( ++p == pe )
 		goto _test_eof125;
 case 125:
-#line 1073 "lex/parser_array_saver.cpp"
+#line 946 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr177;
 	if ( 9 <= (*p) && (*p) <= 13 )
@@ -1098,7 +1098,7 @@ st126:
 	if ( ++p == pe )
 		goto _test_eof126;
 case 126:
-#line 1102 "lex/parser_array_saver.cpp"
+#line 971 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr178;
 	if ( 9 <= (*p) && (*p) <= 13 )
@@ -1121,7 +1121,7 @@ st34:
 	if ( ++p == pe )
 		goto _test_eof34;
 case 34:
-#line 1125 "lex/parser_array_saver.cpp"
+#line 991 "lex/parser_array_saver.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr50;
 	goto st0;
@@ -1136,7 +1136,7 @@ st127:
 	if ( ++p == pe )
 		goto _test_eof127;
 case 127:
-#line 1140 "lex/parser_array_saver.cpp"
+#line 1004 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr179;
 		case 37: goto tr180;
@@ -1175,7 +1175,7 @@ st128:
 	if ( ++p == pe )
 		goto _test_eof128;
 case 128:
-#line 1179 "lex/parser_array_saver.cpp"
+#line 1039 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr186;
 		case 37: goto st125;
@@ -1210,7 +1210,7 @@ st35:
 	if ( ++p == pe )
 		goto _test_eof35;
 case 35:
-#line 1214 "lex/parser_array_saver.cpp"
+#line 1070 "lex/parser_array_saver.cpp"
 	if ( (*p) == 115 )
 		goto st129;
 	goto st0;
@@ -1264,7 +1264,7 @@ st37:
 	if ( ++p == pe )
 		goto _test_eof37;
 case 37:
-#line 1268 "lex/parser_array_saver.cpp"
+#line 1120 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 101: goto st38;
 		case 104: goto st42;
@@ -1353,7 +1353,7 @@ st132:
 	if ( ++p == pe )
 		goto _test_eof132;
 case 132:
-#line 1357 "lex/parser_array_saver.cpp"
+#line 1205 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr193;
 		case 97: goto st133;
@@ -1413,7 +1413,7 @@ st136:
 	if ( ++p == pe )
 		goto _test_eof136;
 case 136:
-#line 1417 "lex/parser_array_saver.cpp"
+#line 1263 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr169;
 		case 37: goto tr170;
@@ -1514,7 +1514,7 @@ st55:
 	if ( ++p == pe )
 		goto _test_eof55;
 case 55:
-#line 1518 "lex/parser_array_saver.cpp"
+#line 1362 "lex/parser_array_saver.cpp"
 	if ( (*p) == 48 )
 		goto tr72;
 	if ( 49 <= (*p) && (*p) <= 57 )
@@ -1528,7 +1528,7 @@ st138:
 	if ( ++p == pe )
 		goto _test_eof138;
 case 138:
-#line 1532 "lex/parser_array_saver.cpp"
+#line 1374 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr199;
 		case 46: goto tr200;
@@ -1555,7 +1555,7 @@ st56:
 	if ( ++p == pe )
 		goto _test_eof56;
 case 56:
-#line 1559 "lex/parser_array_saver.cpp"
+#line 1398 "lex/parser_array_saver.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr74;
 	goto st0;
@@ -1570,7 +1570,7 @@ st139:
 	if ( ++p == pe )
 		goto _test_eof139;
 case 139:
-#line 1574 "lex/parser_array_saver.cpp"
+#line 1411 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr203;
 		case 95: goto tr204;
@@ -1607,7 +1607,7 @@ st140:
 	if ( ++p == pe )
 		goto _test_eof140;
 case 140:
-#line 1611 "lex/parser_array_saver.cpp"
+#line 1443 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto st2;
 		case 100: goto st57;
@@ -1640,7 +1640,7 @@ st57:
 	if ( ++p == pe )
 		goto _test_eof57;
 case 57:
-#line 1644 "lex/parser_array_saver.cpp"
+#line 1471 "lex/parser_array_saver.cpp"
 	if ( (*p) == 98 )
 		goto st141;
 	goto st0;
@@ -1679,7 +1679,7 @@ st143:
 	if ( ++p == pe )
 		goto _test_eof143;
 case 143:
-#line 1683 "lex/parser_array_saver.cpp"
+#line 1508 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr199;
 		case 46: goto tr200;
@@ -1753,7 +1753,7 @@ st65:
 	if ( ++p == pe )
 		goto _test_eof65;
 case 65:
-#line 1757 "lex/parser_array_saver.cpp"
+#line 1580 "lex/parser_array_saver.cpp"
 	if ( (*p) == 48 )
 		goto tr83;
 	if ( 49 <= (*p) && (*p) <= 57 )
@@ -1767,7 +1767,7 @@ st144:
 	if ( ++p == pe )
 		goto _test_eof144;
 case 144:
-#line 1771 "lex/parser_array_saver.cpp"
+#line 1592 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr209;
 		case 46: goto tr210;
@@ -1792,7 +1792,7 @@ st66:
 	if ( ++p == pe )
 		goto _test_eof66;
 case 66:
-#line 1796 "lex/parser_array_saver.cpp"
+#line 1614 "lex/parser_array_saver.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr85;
 	goto st0;
@@ -1807,7 +1807,7 @@ st145:
 	if ( ++p == pe )
 		goto _test_eof145;
 case 145:
-#line 1811 "lex/parser_array_saver.cpp"
+#line 1627 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr211;
 	if ( (*p) > 13 ) {
@@ -1824,7 +1824,7 @@ st146:
 	if ( ++p == pe )
 		goto _test_eof146;
 case 146:
-#line 1828 "lex/parser_array_saver.cpp"
+#line 1642 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr209;
 		case 46: goto tr210;
@@ -2038,7 +2038,7 @@ st86:
 	if ( ++p == pe )
 		goto _test_eof86;
 case 86:
-#line 2042 "lex/parser_array_saver.cpp"
+#line 1854 "lex/parser_array_saver.cpp"
 	if ( (*p) == 48 )
 		goto tr108;
 	if ( 49 <= (*p) && (*p) <= 57 )
@@ -2052,7 +2052,7 @@ st152:
 	if ( ++p == pe )
 		goto _test_eof152;
 case 152:
-#line 2056 "lex/parser_array_saver.cpp"
+#line 1866 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr217;
 		case 46: goto tr218;
@@ -2077,7 +2077,7 @@ st87:
 	if ( ++p == pe )
 		goto _test_eof87;
 case 87:
-#line 2081 "lex/parser_array_saver.cpp"
+#line 1888 "lex/parser_array_saver.cpp"
 	if ( 48 <= (*p) && (*p) <= 57 )
 		goto tr110;
 	goto st0;
@@ -2092,7 +2092,7 @@ st153:
 	if ( ++p == pe )
 		goto _test_eof153;
 case 153:
-#line 2096 "lex/parser_array_saver.cpp"
+#line 1901 "lex/parser_array_saver.cpp"
 	if ( (*p) == 32 )
 		goto tr219;
 	if ( (*p) > 13 ) {
@@ -2109,7 +2109,7 @@ st154:
 	if ( ++p == pe )
 		goto _test_eof154;
 case 154:
-#line 2113 "lex/parser_array_saver.cpp"
+#line 1916 "lex/parser_array_saver.cpp"
 	switch( (*p) ) {
 		case 32: goto tr217;
 		case 46: goto tr218;
@@ -2803,7 +2803,7 @@ case 164:
 #line 111 "lex/parser_array_saver.rl"
 	{ params.end = getArrayPos(params, ragel_num, ragel_type, arraySize); }
 	break;
-#line 2807 "lex/parser_array_saver.cpp"
+#line 2546 "lex/parser_array_saver.cpp"
 	}
 	}
 
@@ -2823,7 +2823,7 @@ case 164:
 }
 
 
-#line 2827 "lex/parser_array_saver.cpp"
+#line 2562 "lex/parser_array_saver.cpp"
 static const int auto_format_detector_start = 1;
 static const int auto_format_detector_first_final = 30;
 static const int auto_format_detector_error = 0;
@@ -2844,12 +2844,12 @@ sound::SoundFileFormat detect_format(const char* str, size_t len)
     sound::SoundFileFormat fmt = sound::FORMAT_UNKNOWN;
 
     
-#line 2848 "lex/parser_array_saver.cpp"
+#line 2579 "lex/parser_array_saver.cpp"
 	{
 	cs = auto_format_detector_start;
 	}
 
-#line 2853 "lex/parser_array_saver.cpp"
+#line 2582 "lex/parser_array_saver.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -3278,7 +3278,7 @@ case 29:
 #line 182 "lex/parser_array_saver.rl"
 	{ fmt = sound::FORMAT_RAW; }
 	break;
-#line 3282 "lex/parser_array_saver.cpp"
+#line 3003 "lex/parser_array_saver.cpp"
 	}
 	}
 

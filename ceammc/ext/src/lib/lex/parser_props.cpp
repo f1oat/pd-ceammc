@@ -10,7 +10,7 @@ namespace ceammc {
 namespace parser {
 
 
-#line 14 "lex/parser_props.cpp"
+#line 11 "lex/parser_props.cpp"
 static const int bool_prop_start = 1;
 static const int bool_prop_first_final = 19;
 static const int bool_prop_error = 0;
@@ -34,14 +34,14 @@ BoolPropOp parse_bool_prop(const char* str)
     BoolPropOp type = BoolPropOp::UNKNOWN;
 
     
-#line 38 "lex/parser_props.cpp"
+#line 31 "lex/parser_props.cpp"
 	{
 	cs = bool_prop_start;
 	}
 
 #line 37 "lex/parser_props.rl"
     
-#line 45 "lex/parser_props.cpp"
+#line 34 "lex/parser_props.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -263,7 +263,7 @@ case 24:
 #line 17 "lex/parser_props.rl"
 	{ type = BoolPropOp::DEFAULT; }
 	break;
-#line 267 "lex/parser_props.cpp"
+#line 250 "lex/parser_props.cpp"
 	}
 	}
 
@@ -280,7 +280,7 @@ case 24:
 }
 
 
-#line 284 "lex/parser_props.cpp"
+#line 263 "lex/parser_props.cpp"
 static const int numeric_prop_start = 1;
 static const int numeric_prop_first_final = 12;
 static const int numeric_prop_error = 0;
@@ -304,14 +304,14 @@ NumericPropOp parse_numeric_prop_op(const char* str)
     NumericPropOp type = NumericPropOp::UNKNOWN;
 
     
-#line 308 "lex/parser_props.cpp"
+#line 283 "lex/parser_props.cpp"
 	{
 	cs = numeric_prop_start;
 	}
 
 #line 75 "lex/parser_props.rl"
     
-#line 315 "lex/parser_props.cpp"
+#line 286 "lex/parser_props.cpp"
 	{
 	if ( p == pe )
 		goto _test_eof;
@@ -496,7 +496,7 @@ case 19:
 #line 55 "lex/parser_props.rl"
 	{ type = NumericPropOp::DEFAULT; }
 	break;
-#line 500 "lex/parser_props.cpp"
+#line 463 "lex/parser_props.cpp"
 	}
 	}
 
@@ -513,7 +513,7 @@ case 19:
 }
 
 
-#line 517 "lex/parser_props.cpp"
+#line 476 "lex/parser_props.cpp"
 static const int property_start = 1;
 static const int property_first_final = 12;
 static const int property_error = 0;

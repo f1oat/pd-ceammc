@@ -84,3 +84,7 @@ mac/embedded
 msw/tcltk*
 # vim temp files
 *.swp
+ceammc/ext/src/lib/args/argcheck.cpp
+ceammc/ext/src/lib/lex/parser_array_saver.cpp
+ceammc/ext/src/lib/lex/parser_music.cpp
+ceammc/ext/src/lib/lex/parser_props.cpp
